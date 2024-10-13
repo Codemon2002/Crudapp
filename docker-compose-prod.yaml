@@ -1,0 +1,7 @@
+version: '3'
+services:
+  node-app:
+    environment:
+      - NOde_ENV=production
+    # we don't run nodemon in production
+    command: npm run prod
